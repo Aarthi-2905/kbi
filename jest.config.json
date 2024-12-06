@@ -1,0 +1,14 @@
+{
+  "moduleDirectories": ["node_modules", "src"],
+  "transform": {
+    "^.+\\.(js|jsx)$": "babel-jest"
+  },
+  "testEnvironment": "jsdom",
+  "moduleFileExtensions": ["js", "jsx"],
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "\\.(gif|jpg|jpeg|png|svg)$": "<rootDir>/__mocks__/fileMock.js"
+  },
+  "transformIgnorePatterns": ["<rootDir>/node_modules/"]
+}
